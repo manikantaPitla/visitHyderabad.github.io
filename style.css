@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "poppins";
+    /* font-family: "work sans"; */
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-dark: #000000;
+    --color-rgba-white: rgba(255, 255, 255, 0.6);
+    --border-color-rgba-white: rgba(255, 255, 255, 0.8);
+    --color-main-rgba: rgba(239, 35, 60, 0.9);
+    --color-main: rgb(239, 35, 60);
+    --color-main2: #023047;
+
+    --bg-white: #ffffff;
+    --bg-dark: #000000;
+    --bg-light-white: #f8f7ff;
+    /* #edf2f4;*/
+    /* 1b2021 black color */
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+.home-container {
+    background-color: var(--bg-light-white);
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--bg-white);
+    box-shadow: 0px 0px 3px #252525;
+    z-index: 1000;
+}
+
+.nav-left h1 {
+    color: var(--color-main2);
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: var(--color-dark);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+.nav-links a:hover {
+    color: var(--color-main2);
+    text-decoration: none;
+}
+
+/* --------nav-end----------- */
+
+.home-image-section {
+    background-image: url("https://res.cloudinary.com/djkatupvr/image/upload/v1680692148/tourism/skyscrapers-sunset_lfmwnq.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.home-content {
+    background-color: var(--bg-white);
+    width: 90vw;
+    position: absolute;
+    top: 45%;
+}
+
+.home-content h1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.home-content p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.home-content button {
+    outline: none;
+    border: none;
+    background-color: var(--color-main2);
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+}
+
+/*-------------------- home container end-------------------- */
+
+@media screen and (max-width : 768px) {
+
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-white);
+        min-height: 100vh;
+        width: 0;
+        overflow: hidden;
+        transition: 0.4s;
+        box-shadow: 0px 0px 5px #252525;
+        padding-top: 20px;
+    }
+
+    .back-blur {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        backdrop-filter: blur(2px);
+
+    }
+
+    .nav-links-open {
+        width: 70vw;
+    }
+
+    .nav-links a {
+        padding: 10px 0px;
+        padding-left: 20px;
+        border-bottom: 1px solid grey;
+    }
+
+    .nav-links a:hover {
+        text-decoration: none;
+    }
+
+    .nav-menu-icon i {
+        font-size: 22px;
+        color: var(--bg-dark);
+    }
+
+    .nav-close-icon {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 15px;
+        width: 100px;
+        height: 50px;
+        text-align: right;
+    }
+
+    .nav-close-icon i {
+
+        font-size: 22px;
+        color: var(--bg-dark);
+        transition: 0.4s;
+
+    }
+}
+/*-------------------- screen size below 768 end-------------------- */

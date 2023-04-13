@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Places</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="places.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/43314e4458.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav d-flex flex-row justify-content-between align-items-center py-2 px-3" id="nav">
+        <div class="nav-left">
+            <a href="index.html"><h1 class="m-0">Visit Hyderabad</h1></a>
+        </div>
+        <div class="nav-right">
+            <div id="backBlur"></div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="places.html">Places</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <div class="nav-close-icon d-block d-md-none" onclick="navLinks()">
+                    <i class="fa-solid fa-xmark" id="navCloseIcon"></i>
+                </div>
+            </div>
+            <div class="nav-menu-icon d-block d-md-none" onclick="navLinks()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="places-container  pt-4 pb-5 p-md-3" id="placesContainer">
+        <div class="row p-0 m-0 pt-md-3">
+            <div class="col-12">
+                <h1 class="content-title mb-4 pt-5">Places to visit</h1>
+            </div>
+        </div>
+        <div class="places-section ">
+            <!-- charminar place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101390/tourism/places%20images/charminar_drhmtg.jpg" alt="charminar">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Charminar</h1>
+                    <p class="place-card-content">The Charminar is an iconic monument located in Hyderabad. It was built in 1591 by Sultan Muhammad Quli Qutb Shah ...</p>
+                    <div class="open-arrow">
+                        <a href="charminar.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Golconda place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101389/tourism/places%20images/golconda_fort_orzxca.jpg" alt="golconda fort">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Golconda Fort</h1>
+                    <p class="place-card-content">Golconda Fort is a magnificent historical monument. It was built in 16th century by Qutb Shahi dynasty, which ruled the region at the time ..</p>
+                    <div class="open-arrow">
+                        <a href="golconda_fort.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Hussain Sagar place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101389/tourism/places%20images/hussain_sagar_dguyg6.jpg" alt="Hussain sagar">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Hussain Sagar</h1>
+                    <p class="place-card-content">Hussain Sagar Lake is a serene oasis that offers a respite from the hustle and bustle of city life. Take a boat ride on the lake...</p>
+                    <div class="open-arrow">
+                        <a href="hussain_sagar.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Birla Mandir place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101388/tourism/places%20images/birla_mandir_n8ant8.jpg" alt="Birla Mandirr">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Birla Mandir</h1>
+                    <p class="place-card-content">The Birla Mandir is a Hindu temple located on a hilltop in Hyderabad. The temple is dedicated to Lord Venkateswara ...</p>
+                    <div class="open-arrow">
+                        <a href="birla_mandir.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Ramoji Film City place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101389/tourism/places%20images/ramoji_film_city_neel9g.jpg" alt="Ramoji Film City">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Ramoji Film City</h1>
+                    <p class="place-card-content">Ramoji Film City is the world's largest film studio complex, located on the outskirts of Hyderabad...</p>
+                    <div class="open-arrow">
+                        <a href="ramoji_film_city.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Chowmahalla Palace place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101388/tourism/places%20images/chowmahalla_Palace_hvenxi.jpg" alt="Chowmahalla Palace">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Chowmahalla Palace</h1>
+                    <p class="place-card-content">The Chowmahalla Palace is a stunning palace complex that was the seat of the Asaf Jahi dynasty ...</p>
+                    <div class="open-arrow">
+                        <a href="chowmahalla_palace.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Salar Jung Museum place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101389/tourism/places%20images/salarjung_museum_tbwfhj.jpg" alt="Salar Jung Museum">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Salar Jung Museum</h1>
+                    <p class="place-card-content">The Salar Jung Museum is a must-visit destination for art lovers. The museum features a vast collection of art ...</p>
+                    <div class="open-arrow">
+                        <a href="salar_jung_museum.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Nehru Zoological Park place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101389/tourism/places%20images/nehru_zoological_park_ounute.jpg" alt="Nehru Zoological Park">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Nehru Zoological Park</h1>
+                    <p class="place-card-content">The Salar Jung Museum is a must-visit destination for art lovers. The museum features a vast collection of art from around the world....</p>
+                    <div class="open-arrow">
+                        <a href="nehru_zoological_park.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--Qutb Shahi Tombs place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101388/tourism/places%20images/qutb_shahi_thombs_lupyb4.jpg" alt="Qutb Shahi Tombs">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Qutb Shahi Tombs</h1>
+                    <p class="place-card-content">The Qutb Shahi Tombs are a group of tombs and mosques that were built in 16th , 17th centuries...</p>
+                    <div class="open-arrow">
+                        <a href="qutb_shahi_tombs.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--Laad Bazaar place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681101388/tourism/places%20images/laad_bazaar_h43mx6.jpg" alt="Laad Bazaar">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Laad Bazaar</h1>
+                    <p class="place-card-content">Laad Bazaar is a bustling shopping district in Hyderabad that is famous for its bangles and other traditional jewelry...</p>
+                    <div class="open-arrow">
+                        <a href="laad_bazaar.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+                <a href="index.html"><button class="btn "><i class="fa-solid fa-house"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

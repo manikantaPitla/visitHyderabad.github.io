@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit-Hyderabad</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/43314e4458.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav d-flex flex-row justify-content-between align-items-center py-2 px-3" id="nav">
+        <div class="nav-left">
+            <h1 class="m-0" onclick="display('sectionHomeContainer')">Visit Hyderabad</h1>
+        </div>
+        <div class="nav-right">
+            <div id="backBlur"></div>
+            <div class="nav-links" id="navLinks">
+                <a href="#" onclick="display('sectionHomeContainer')">Home</a>
+                <a href="#" onclick="display('sectionPlacesContainer')">Places</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <div class="nav-close-icon d-block d-md-none" onclick="navLinks()">
+                    <i class="fa-solid fa-xmark" id="navCloseIcon"></i>
+                </div>
+            </div>
+            <div class="nav-menu-icon d-block d-md-none" onclick="navLinks()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div id="sectionHomeContainer">
+        <div class="home-container d-flex flex-column align-items-center">
+            <div class="home-image-section "></div>
+            <div class="home-content shadow text-center p-4">
+                <div>
+                    <h1>Visit Hyderabad</h1>
+                    <p>Welcome to Hyderabad, the city of pearls! Hyderabad is a city with a rich history, culture, and heritage. From ancient landmarks to modern attractions, there is so much to see and do here.</p>
+                    <button class="mt-2" id="exploreBtn" onclick="display('sectionPlacesContainer')">Explore now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="places-container  pt-5 pb-5 p-md-4" id="sectionPlacesContainer">
+        <div class="row p-0 m-0 pt-md-3">
+            <div class="col-12">
+                <h1 class="content-title mb-4 pt-5">Places to visit</h1>
+            </div>
+        </div>
+        <div class="places-section ">
+            <!-- charminar place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://images.unsplash.com/photo-1551161242-b5af797b7233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1451&q=80" alt="charminar">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Charminar</h1>
+                    <p class="place-card-content">The Charminar is an iconic monument located in Hyderabad. It was built in 1591 by Sultan Muhammad Quli Qutb Shah ...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionCharminar')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Golconda place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://images.unsplash.com/photo-1470075446540-4391a96ec621?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="golconda fort">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Golconda Fort</h1>
+                    <p class="place-card-content">Golconda Fort is a magnificent historical monument. It was built in 16th century by Qutb Shahi dynasty, which ruled the region at the time ..</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionGolconda')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Hussain Sagar place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2015/12/23/Pictures/_e48cf168-a94e-11e5-bc4d-302034fae57a.jpg" alt="Hussain sagar">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Hussain Sagar</h1>
+                    <p class="place-card-content">Hussain Sagar Lake is a serene oasis that offers a respite from the hustle and bustle of city life. Take a boat ride on the lake...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionHussainSagar')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Birla Mandir place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://www.hyderabadzone.com/wp-content/uploads/2019/09/Birla-Mandir-Temple-Hyderabad-650x488.jpg" alt="Birla Mandirr">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Birla Mandir</h1>
+                    <p class="place-card-content">The Birla Mandir is a Hindu temple located on a hilltop in Hyderabad. The temple is dedicated to Lord Venkateswara ...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionBirlaMandir')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Ramoji Film City place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://www.ramojifilmcity.com/images/images/studio-tour.webp" alt="Ramoji Film City">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Ramoji Film City</h1>
+                    <p class="place-card-content">Ramoji Film City is the world's largest film studio complex, located on the outskirts of Hyderabad...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionRamojiFilmCity')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Chowmahalla Palace place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/03/07131746/ChowmahallaPalace1.jpg" alt="Chowmahalla Palace">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Chowmahalla Palace</h1>
+                    <p class="place-card-content">The Chowmahalla Palace is a stunning palace complex that was the seat of the Asaf Jahi dynasty ...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionChowmahallaPalace')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Salar Jung Museum place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://map.sahapedia.org/admin/assets/images/202105191621412730_Banner.jpg?__imr__=bannerMuseum" alt="Salar Jung Museum">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Salar Jung Museum</h1>
+                    <p class="place-card-content">The Salar Jung Museum is a must-visit destination for art lovers. The museum features a vast collection of art ...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionSalarJungMuseum')" ></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Nehru Zoological Park place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/filestore/ge3zzi0tulrplpjjvu8j9swsgea1_1589351340_DSC00925.JPG" alt="Nehru Zoological Park">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Nehru Zoological Park</h1>
+                    <p class="place-card-content">The Salar Jung Museum is a must-visit destination for art lovers. The museum features a vast collection of art from around the world....</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionNehruZoologicalPark')"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Qutb Shahi Tombs place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://th-i.thgim.com/public/news/cities/Hyderabad/41sujl/article35881245.ece/alternates/FREE_1200/hy13qutbshahi" alt="Qutb Shahi Tombs">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Qutb Shahi Tombs</h1>
+                    <p class="place-card-content">The Qutb Shahi Tombs are a group of tombs and mosques that were built in 16th , 17th centuries...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionQutbShahiTombs')"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Laad Bazaar place-card -->
+            <div class="place-card p-md-1">
+                <div class=" p-2 d-flex align-items-center justify-content-center">
+                    <img src="https://static.toiimg.com/thumb/msid-75735077,width-800,height-600,resizemode-75,imgsize-94149,pt-32,y_pad-40/75735077.jpg" alt="Laad Bazaar">
+                </div>
+                <div class=" p-2 text-left text-sm-center">
+                    <h1 class="place-card-title m-0">Laad Bazaar</h1>
+                    <p class="place-card-content">Laad Bazaar is a bustling shopping district in Hyderabad that is famous for its bangles and other traditional jewelry...</p>
+                    <div class="open-arrow">
+                        <i class="fa-solid fa-circle-chevron-right" onclick="display('sectionLaadBazaar')"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+                <button class="btn " onclick="display('sectionHomeContainer')"><i class="fa-solid fa-house"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- charminar detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionCharminar">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://t4.ftcdn.net/jpg/00/47/49/01/360_F_47490128_JLClMTbZyVdxl3OW2m8H4vJHW7hDZ8Jj.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/10/Charminar.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://t3.ftcdn.net/jpg/03/97/74/64/360_F_397746410_YP1kxMSzQUhzDrlXCGu9wpKeDakisHjH.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5 pl-lg-0">
+                    <div class="maps-section">
+                        <a href="#"  class="d-flex flex-row align-items-center" onclick="display('sectionCharminarMap')">Map <i class="fa-regular fa-share-from-square ml-2"></i></a>
+                    </div>
+                    <h1 class="content-title">Charminar</h1>
+                    <p>The Charminar is an iconic monument located in the heart of Hyderabad. It was built in 1591 by Sultan Muhammad Quli Qutb Shah to commemorate the end of a plague epidemic in the city. The monument is known for its intricate architecture, including its four minarets that rise to a height of 48.7 meters. Visitors can climb to the top of the minarets for a breathtaking view of the city.
+                    </p>
+                    <p>
+                        The name "Charminar" is derived from two words: "Char" meaning four, and "Minar" meaning tower or minaret. The monument is called Charminar because it has four towering minarets that rise to a height of 56 meters, and each of the four sides of the monument is adorned with a beautiful arch.
+                    </p>
+                    <p>
+                        The Charminar was built in the Islamic style of architecture and is a beautiful example of the blend of Indo-Islamic architectural styles. The monument is made of granite, limestone, and mortar, and its arches are adorned with intricate stucco work. The minarets are topped with onion-shaped domes made of white marble.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <p>
+                The Charminar has been the symbol of Hyderabad for over four centuries and is a popular tourist destination in the city. The monument is also an important religious site, as there is a mosque on the top floor of the monument. The mosque is still in use today, and prayers are offered five times a day.
+            </p>
+            <p>
+                One of the most interesting features of the Charminar is the spiral staircase inside the structure, which leads to the top floor of the monument. The staircase has 149 steps and is quite narrow, making it a challenging climb. However, the view from the top is breathtaking and offers a panoramic view of the city.
+            </p>
+            <p>
+                Over the years, the Charminar has undergone several restorations and renovations to preserve its beauty and cultural significance. The latest renovation took place in 2019, where the monument was restored to its original glory by the Telangana government.
+            </p>
+            <p>
+                In conclusion, the Charminar is not just a monument, but a symbol of Hyderabad's rich history and culture. It is a must-visit destination for anyone traveling to Hyderabad, and its beauty and grandeur continue to captivate visitors from around the world.
+            </p>
+        </div>
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!-- map-charminar -->
+    <div class="map-container" id="sectionCharminarMap">
+        <div>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1492.4760025100345!2d78.47343969351368!3d17.361563542213453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e1!3m2!1sen!2sin!4v1681044877778!5m2!1sen!2sin"   referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionCharminar')" ><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="open-in-maps-section">
+            <a href="https://www.google.com/maps/place/Charminar/@17.3615635,78.4734397,343m/data=!3m1!1e3!4m10!1m2!2m1!1scharminar!3m6!1s0x3bcb978a6e1a939b:0xcb5a69e4aaf113fb!8m2!3d17.3615636!4d78.4746645!15sCgljaGFybWluYXJaCyIJY2hhcm1pbmFykgEIbW9udW1lbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUkNkbHBwWWxsM0VBReABAA!16zL20vMDNuZmxw!5m1!1e2" target="_blank"><button class="btn ">open in Maps</button></a>
+        </div>
+    </div>
+    <!-- golconda detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionGolconda">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.hyderabadzone.com/wp-content/uploads/2019/09/Golconda-Fort.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Golkonda_Fort_Large_View.jpg/1024px-Golkonda_Fort_Large_View.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://hyderabadtourpackage.in/images/places-to-visit/golconda-fort-hyderabad-entryfee-timings-tour-package-header.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Golconda Fort</h1>
+                    <p>Golconda Fort is a magnificent historical monument located in Hyderabad. It was built in the 16th century by the Qutb Shahi dynasty, which ruled the region at the time. The fort was initially constructed as a mud fort, but it was later fortified with granite by the successive rulers of the Qutb Shahi dynasty.
+                    </p>
+                    <p>
+                        The name "Golconda" is believed to have been derived from the Telugu words "Golla" and "Konda," which mean "shepherd's hill." This name is a reference to the hill on which the fort is built
+                    </p>
+                    <p>
+                        Golconda Fort was a significant center of trade and commerce during the Qutb Shahi dynasty. The fort was also known for its diamond mines, and the famous Koh-i-Noor diamond is said to have been found in one of these mines.
+                        The fort is spread over an area of 11 kilometers and consists of four distinct forts that are separated by a series of gateways, walls, and bastions. The fortifications were built to protect the innermost fort, which was the residence of the royal family and their close associates.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <p>
+                The fort has several impressive features, including its acoustics. The sound of a hand clap at the entrance of the fort can be heard over a kilometer away, which was used as a signaling system during wartime. The fort also has several underground passages that were used by the royals to escape in case of an attack.
+            </p>
+            <p>
+                One of the main attractions of the fort is its famous light and sound show, which is held every evening. The show narrates the history of the fort, and visitors can experience the grandeur and beauty of the monument in a unique way.
+            </p>
+            <p>
+                Today, Golconda Fort is a popular tourist destination and an important part of Hyderabad's history and culture. The fort has undergone several renovations and restorations over the years, and it is now a well-preserved monument that showcases the architectural brilliance of the Qutb Shahi dynasty.
+            </p>
+            <p>
+                In conclusion, Golconda Fort is a fascinating monument that offers a glimpse into the rich history and culture of Hyderabad. Its impressive architecture, underground passages, and acoustics make it a unique attraction that is a must-visit for anyone traveling to the city.
+            </p>
+
+            <div class="more-content">
+                <h1 class="content-title py-3">History of Golconda Fort</h1>
+                <p>
+                    The Qutb Shahi dynasty ruled the region from 1518 to 1687 and made Golconda Fort their capital. The fort was a center of trade and commerce, and it was known for its diamond mines. The Koh-i-Noor diamond is said to have been found in one of these mines.
+                </p>
+                <p>
+                    During the Qutb Shahi dynasty, Golconda Fort was known for its advanced architecture and engineering. The fort was built on a granite hill that rises 120 meters above the surrounding plains, and it was fortified with walls, bastions, and gateways.
+                </p>
+                <p>
+                    The fort consists of four distinct forts that are separated by a series of walls and gateways. The outermost fort was used for defense and had a series of gateways that were designed to trap invading armies. The second fort was used to store weapons and ammunition, and the third fort was used as a residence for the royal family and their close associates. The innermost fort was the highest and most secure, and it was the residence of the ruler and his family.
+                    The fort was also known for its unique acoustics. The sound of a hand clap at the entrance of the fort can be heard over a kilometer away, which was used as a signaling system during wartime.
+                </p>
+                <p>
+                    In 1687, the Mughal emperor Aurangzeb captured Golconda Fort and brought an end to the Qutb Shahi dynasty. The fort lost its importance and was abandoned for several centuries.
+                    In the 19th century, the British government took over the fort and used it as a military garrison. The fort was then restored and converted into a tourist attraction in the 1950s.
+                </p>
+            </div>
+            <div class="more-content">
+                <h1 class="content-title py-3">Kings of Golconda Fort</h1>
+                <ul>
+                    <li>
+                        <span>Kakatiya Dynasty (12th-14th century):</span> The fort was initially built as a mud fort by the Kakatiya dynasty in the 12th century. The Kakatiya dynasty ruled the region until the 14th century when they were conquered by the Delhi Sultanate.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Bahmani Sultanate (14th-16th century):</span> The Bahmani Sultanate was established in 1347 and ruled over the Deccan region, including Golconda Fort. The Bahmani Sultanate was succeeded by the five Deccan sultanates, one of which was the Qutb Shahi dynasty.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Qutb Shahi Dynasty (16th-17th century):</span> The Qutb Shahi dynasty was founded in 1518 by Sultan Quli Qutb Shah, who was a governor under the Bahmani Sultanate. The Qutb Shahi dynasty ruled the region for almost 170 years and made Golconda Fort their capital. They expanded and fortified the fort, adding several structures and features.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Mughal Empire (17th-18th century):</span> In 1687, the Mughal emperor Aurangzeb captured Golconda Fort and brought an end to the Qutb Shahi dynasty. The Mughal Empire ruled over the region until the decline of their empire in the 18th century.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Asaf Jahi Dynasty (18th-20th century):</span> The Asaf Jahi dynasty was founded by Nizam-ul-Mulk Asaf Jah, who was appointed as the governor of the Deccan region by the Mughal Empire. The Asaf Jahi dynasty ruled over Hyderabad and the surrounding regions for almost two centuries, during which they made several additions to Golconda Fort.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!-- Hussain Sagar Lake detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionHussainSagar">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://cdn.cseindia.org/gic/40.PNG" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://img.staticmb.com/mbcontent/images/uploads/2022/9/hussain-sagar.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://imgmedia.lbb.in/media/2018/07/5b4c57b188b9d753082ad1f4_1531729841898.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Hussain Sagar Lake</h1>
+                    <p>Hussain Sagar Lake is a man-made lake located in the heart of Hyderabad. It was built in 1562 by Ibrahim Quli Qutb Shah, the fifth Qutb Shahi ruler of the region, to meet the water and irrigation needs of the city. The lake is spread over an area of 5.7 square kilometers and is fed by four small streams.
+                    </p>
+                    <p>
+                        The lake was named after Hussain Shah Wali, a saint who lived during the Qutb Shahi dynasty. The Qutb Shahi rulers were known for their love of art, culture, and architecture, and they built several impressive structures in Hyderabad, including the Charminar, Mecca Masjid, and Golconda Fort.
+                    </p>
+                    <p>
+                        Hussain Sagar Lake has a rich history and played an important role in the development of Hyderabad. The lake was a major source of water for the city and was used for irrigation, fishing, and transportation. The lake was also used for recreational activities, and several parks and gardens were built around it.
+                    </p>
+                    <p>
+                        During the British rule in India, the lake was used as a water source for the cantonment area of Secunderabad. The lake was also used for boating and other recreational activities by the British officials and the local elites.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <p>
+                In the 20th century, the lake underwent several renovations and restorations to address issues such as pollution and silting. In the 1990s, a large statue of Lord Buddha was installed in the middle of the lake, which became a popular tourist attraction.
+            </p>
+            <p>
+                Today, Hussain Sagar Lake is a popular destination for tourists and locals alike. The lake is surrounded by several parks and gardens, including Lumbini Park and NTR Gardens. The lake also has several attractions, including the 18-meter tall Buddha statue, a boating club, and a water sports center.
+            </p>
+            <p>
+                It is not just a beautiful lake but also an important part of Hyderabad's history and culture. It is a symbol of the city's rich heritage and a testament to the ingenuity and vision of its rulers.
+            </p>
+
+            <div class="more-content">
+                <h1 class="content-title py-3">Interesting facts about Hussain Sagar Lake</h1>
+                <ul>
+                    <li>
+                        <span>Largest artificial lake in Asia:</span> Hussain Sagar Lake is one of the largest artificial lakes in Asia, with a maximum depth of 32 feet and a storage capacity of 3.9 TMC.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Necklace Road:</span> The lake is surrounded by a 3.5 km long boulevard called Necklace Road, which is a popular destination for joggers, cyclists, and walkers.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Boating:</span> Boating is a popular activity at the lake, with various types of boats available for rent, including motorboats, speed boats, and pedal boats. Visitors can also take a ferry ride to the nearby Buddha statue on the lake.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Musical fountain:</span> The lake has a musical fountain show that takes place in the evenings, featuring colorful lights and music.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Archaeological significance:</span> The lake has archaeological significance as well. During the construction of the lake, several ancient and medieval structures were discovered, including a Buddhist monastic complex and a 3rd-century BC rock-cut temple.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Birdwatching:</span> The lake is also a haven for birdwatchers, with several species of birds, including migratory birds, being spotted around the lake.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Annual event:</span> Every year, during the festival of Ganesh Chaturthi, a massive statue of Lord Ganesh is immersed in the lake, in a grand event called the immersion procession.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!-- Birla Mandir detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionBirlaMandir">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://imgmedia.lbb.in/media/2019/06/5d077556b9a2e56fed720d21_1560769878156.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.trawell.in/admin/images/upload/564578649Kolkata_Birla_Mandir_Main.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://img.veenaworld.com/wp-content/uploads/2021/05/Birla-Mandir-Hyderabad-Timings-History-How-to-Visit.jpeg?imwidth=1080" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Birla Mandir</h1>
+                    <p>Birla Mandir is a Hindu temple located on a hilltop in Hyderabad, Telangana, India. The temple is dedicated to Lord Venkateshwara, also known as Lord Balaji, a form of the Hindu god Vishnu. The temple is built entirely of white marble and is a popular destination for devotees and tourists alike.
+                    </p>
+                    <p>
+                        The temple was built by the Birla Foundation in 1976, one of the leading industrial conglomerates in India. The construction of the temple took nearly 10 years to complete, and the foundation spent over 10 million rupees on the project.
+                    </p>
+                    <p>
+                        The temple is designed in the traditional South Indian style of temple architecture, with intricate carvings and sculptures adorning the walls and ceilings. The main shrine houses a 11-foot tall statue of Lord Venkateshwara, which is made of granite and brought from Tirumala, the abode of the deity.
+                    </p>
+                    <p>
+                        Apart from the main shrine, the temple also has shrines dedicated to other Hindu deities such as Lord Shiva, Lord Ganesha, and Goddess Saraswati. The temple complex also includes several other buildings, including a museum showcasing the history of the Birla family and their contributions to the country.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <p>
+                Birla Mandir is not just a religious landmark but also a cultural icon in Hyderabad. The temple's stunning architecture and serene surroundings make it a popular destination for photography enthusiasts, artists, and visitors seeking peace and tranquility.
+            </p>
+            <p>
+                The temple is open to visitors from early morning till late in the evening and is especially crowded during major Hindu festivals such as Diwali and Navratri. The temple also hosts several cultural events and religious ceremonies throughout the year.
+            </p>
+            <p>
+                Overall, Birla Mandir is a must-visit destination for anyone interested in Indian architecture, culture, and spirituality. Its pristine beauty and serene ambiance make it one of the most popular tourist attractions in Hyderabad.
+            </p>
+
+            <div class="more-content">
+                <h1 class="content-title py-3">Interesting facts about Birla Mandir</h1>
+                <ul>
+                    <li>
+                        <span>Location:</span> Birla Mandir is situated on a 280-foot high hill called Naubat Pahad in Hyderabad, which offers a panoramic view of the city.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Architecture:</span> The temple's architecture is a fusion of various styles, including Rajasthani, Utkala, and Dravidian, which makes it a unique creation.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Marble used:</span> The marble used in the construction of the temple was brought from Rajasthan and is of the finest quality.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Temple bells:</span> The temple has a set of 11 bells that weigh over 1,000 kilograms each. These bells were made in Rajkot, Gujarat, and were transported to Hyderabad on bullock carts.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Gardens:</span> The temple complex also has several gardens, including a landscaped garden called the Rock Garden, which is a popular spot for visitors to relax and enjoy the surroundings.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!-- Ramoji Film City detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionRamojiFilmCity">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://hyderabadtourpackage.in/images/places-to-visit/ramoji-film-city-hyderabad-entryfee-timings-tour-package-header.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Ramoji_Film_City_-_UK_setting.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://roamingpirates.com/wp-content/uploads/2023/02/IMG_20220710_094845-scaled-e1675505703689-1024x641.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Ramoji Film City</h1>
+                    <p>Ramoji Film City is the world's largest film studio complex, located on the outskirts of Hyderabad.
+                    </p>
+                    <p>
+                        It was built in 1996 by Ramoji Rao, the founder of the Eenadu newspaper group. It was initially built as a film studio complex, but over the years, it has evolved into a tourist destination.
+                    </p>
+                    <p>
+                        The sprawling complex spans over 2,000 acres and features a range of film sets, sound stages, production facilities, and other amenities required for filmmaking. It is one of the largest and most advanced film production centers in the world, with state-of-the-art equipment and facilities.
+                    </p>
+                    <p>
+                        The complex was built with an investment of over 1 billion rupees and is considered one of the most expensive film production centers in the world.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <h1 class="content-title PY-3">Tourism in Ramoji Film City</h1>
+            <p>
+                <span>Film studio tour:</span> Ramoji Film City offers guided tours of its film studios, where you can see the behind-the-scenes action of a movie production. You can witness the making of a movie, visit the sets and locations, and get an idea of the film-making process.
+            </p>
+            <p>
+                <span>Adventure rides:</span> Ramoji Film City has a range of adventure rides and activities that you can enjoy, including roller coasters, zip-lining, and ATV rides.
+            </p>
+            <p>
+                <span>Live shows:</span> Ramoji Film City has several live shows that are entertaining and informative. These shows showcase different aspects of Indian culture, including dance performances, musical shows, and puppet shows.
+            </p>
+            <p>
+                <span>Gardens and parks:</span> The complex has several beautifully landscaped gardens and parks, including the Japanese garden, the Mughal garden, and the Sun Fountain Garden. These gardens provide a peaceful and serene environment for visitors to relax and enjoy the surroundings.
+            </p>
+            <p>
+                <span>Exhibitions and museums:</span> Ramoji Film City has several exhibitions and museums that showcase the history of Indian cinema, the making of a movie, and the evolution of technology in filmmaking.
+            </p>
+            <p>
+                <span>Shopping and dining:</span> The complex has several shops and restaurants where you can shop for souvenirs and enjoy a range of cuisines, including Indian, Chinese, and continental.
+            </p>
+            <p>
+                <span>Accommodation:</span> Ramoji Film City has several hotels and guest houses that offer a luxurious and comfortable stay to the visitors. These hotels are designed to provide a unique and immersive experience of the film industry.
+
+            </p>
+
+            <div class="more-content">
+                <h1 class="content-title py-3">Interesting about Ramoji Film City</h1>
+                <ul>
+                    <li>
+                        Ramoji Film City has received several accolades over the years, including the Guinness World Record for the largest film studio complex in the world.
+                    </li>
+                    <br>
+                    <li>
+                        Ramoji Film City offers guided tours of its film studios, where you can see the behind-the-scenes action of a movie production. You can witness the making of a movie, visit the sets and locations, and get an idea of the film-making process.
+                    </li>
+                    <br>
+                    <li>
+                        Ramoji Film City is a popular destination for filmmakers, both from India and abroad. Many famous movies, including Baahubali, Dilwale, and Chennai Express, have been shot at the complex.
+                    </li>
+                    <br>
+                    <li>
+                        Ramoji Film City has received several awards and accolades for its contribution to the film industry and tourism. It has been recognized as the best tourism destination by the Government of India and has received the National Tourism Award several times
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!-- Chowmahalla Palace detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionChowmahallaPalace">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.holidify.com/images/cmsuploads/compressed/13761119445755c029184b_20220523165504.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://rmaarchitects.com/website/wp-content/uploads/2012/08/CHOWMAHALLA-6-1140x900.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://rmaarchitects.com/website/wp-content/uploads/2012/08/CHOWMAHALLA-5_COVER.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Chowmahalla Palace</h1>
+                    <p>Chowmahalla Palace is a historical palace located in the old city of Hyderabad, Telangana, India. It was built between 1857 and 1869 by Nizam Salabat Jung. The palace served as the seat of the Asaf Jahi dynasty, the rulers of Hyderabad State, for almost 200 years. The palace was the center of Hyderabad's administrative and cultural life during the Nizam's reign. The palace was also the venue for the famous Durbar celebrations, which were held on special occasions.
+                    </p>
+                    <p>
+                        Chowmahalla Palace was the official residence of the Nizams of Hyderabad while they ruled the state. The palace was built over a period of several decades, starting in the late 18th century, and was used as a center of administrative and cultural activity during the Nizam's reign
+                    </p>
+                    <p>
+                        The palace was also home to the Nizam's private collection of books and manuscripts, which were stored in the Khilwat Library. The library had a rare collection of Persian and Arabic manuscripts, some of which were over 300 years old.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <h1 class="content-title">Architecture</h1>
+            <p>
+                Chowmahalla Palace is an excellent example of the Nizam's architecture, which is a blend of Indo-Saracenic and European styles. The palace complex consists of four palaces, each with its own unique style and design. The palaces are known as Afzal Mahal, Tahniyat Mahal, Mahtab Mahal, and Aftab Mahal. The palace complex covers an area of 12 acres and has 45 rooms, 19 courtyards, and 2 fountains.
+            </p>
+            <p>
+                The palace's main entrance, known as the Khilwat Mubarak, is a magnificent example of Indo-Saracenic architecture. It features intricate carvings, beautiful arches, and exquisite stucco work. The Khilwat Mubarak is also home to the grand Durbar Hall, which was used for the coronation of the Nizams and other important events.
+            </p>
+            <p>
+                The palace also has a beautiful collection of vintage cars, including a Rolls Royce, a Packard, and a Jaguar. The palace's interior features ornate wooden ceilings, stained glass windows, and intricate carvings. The palace's gardens are also a beautiful sight, with lush green lawns, beautiful fountains, and fragrant flowers.
+            </p>
+            <p>
+                Today, Chowmahalla Palace is open to the public and is a popular tourist destination in Hyderabad. The palace has been restored and renovated, and visitors can explore the palace's many rooms, courtyards, and gardens to experience the grandeur and opulence of the Nizams' lifestyle.
+            </p>
+
+            <div class="more-content">
+                <h1 class="content-title py-3">Interesting facts about Chowmahalla Palace</h1>
+                <ul>
+                    <li>
+                        The palace's name, Chowmahalla, means "four palaces" in Urdu. As mentioned earlier, the palace complex consists of four palaces, each with its own unique design and architecture.
+                    </li>
+                    <br>
+                    <li>
+                        The palace has been used as a film set for several movies, including the Bollywood film "Jodhaa Akbar" and the Telugu film "Magadheera".
+                    </li>
+                    <br>
+                    <li>
+                        The palace has a Clock Tower, which was added to the palace complex in the early 20th century. The Clock Tower is 75 feet tall and features a clock face on each of its four sides.
+                    </li>
+                    <br>
+                    <li>
+                        Chowmahalla Palace also has a collection of vintage photographs and artifacts on display, giving visitors a glimpse into Hyderabad's rich history and culture.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!--Salar Jung Museum detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionSalarJungMuseum">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/a3/33.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://salarjungmuseum.in/images/Velied%20Rebecca/1%20(1).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://im.whatshot.in/img/2021/Nov/header3-1637519766.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Salar Jung Museum</h1>
+                    <p>
+                        The Salar Jung Museum is a must-visit destination for art lovers. The museum features a vast collection of art, including sculptures, paintings, and textiles from around the world. The collection includes pieces from as far back as the 2nd century BCE and as recent as the 20th century
+                    </p>
+                    <p>
+                        Salar Jung III, the founder of the museum, was an avid collector of art objects from a young age. His collection was so vast that he had to build a separate palace to house it all.
+                    </p>
+                    <p>
+                        Salar Jung III was also a well-known bibliophile and had a collection of over 40,000 books. Many of these books were donated to the Osmania University Library in Hyderabad after his death.
+                    </p>
+                    <p>
+                        The Salar Jung Museum is the third largest museum in India, after the Indian Museum in Kolkata and the National Museum in Delhi.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <h1 class="content-title">History</h1>
+            <p>
+                The museum is named after its founder, Salar Jung III, who was a member of the prominent Salar Jung family and served as Prime Minister of Hyderabad State in the early 20th century. He was a passionate collector of art objects and began amassing his collection at a young age. Over the years, his collection grew so vast that he decided to establish a museum to house it and make it accessible to the public.
+            </p>
+            <p>
+                The Salar Jung Museum was inaugurated in 1951, two years after Salar Jung III's death. At the time, it housed only a small fraction of his collection, but over the years, the museum has expanded and now boasts over 1 million objects.
+            </p>
+            <p>
+                The museum has a unique collection of clocks, including the musical clock mentioned earlier. The collection also includes a large number of European and Indian clocks, some of which date back to the 17th century.
+            </p>
+            <p>
+                Today, Chowmahalla Palace is open to the public and is a popular tourist destination in Hyderabad. The palace has been restored and renovated, and visitors can explore the palace's many rooms, courtyards, and gardens to experience the grandeur and opulence of the Nizams' lifestyle.
+            </p>
+
+            <div class="more-content">
+                <h1 class="content-title py-3">Collection </h1>
+                <ul>
+                    <li>
+                        <span>Veiled Rebecca:</span> This marble sculpture by Italian sculptor Giovanni Battista Benzoni is one of the museum's most famous exhibits. The sculpture depicts a veiled woman with intricate details on the veil, and it is said that it took the artist over 20 years to complete
+                    </li>
+                    <br>
+                    <li>
+                        <span>Musical Clock:</span> The museum also has a musical clock, which was made in the 19th century in England. The clock features a miniature orchestra that plays music at regular intervals.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Jade Room:</span> The Jade Room houses a large collection of jade objects, including vases, bowls, and figurines. Many of these objects date back to the Ming and Qing dynasties of China.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Indian Miniature Paintings:</span> The museum has a large collection of Indian miniature paintings, which are known for their intricate details and vibrant colors. Many of these paintings date back to the Mughal era.
+                    </li>
+                    <br>
+                    <li>
+                        <span>European Paintings:</span> The museum has a collection of European paintings, including works by famous painters like Raphael, Rembrandt, and Murillo.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Furniture:</span> The museum has a collection of antique furniture from India and Europe. The collection includes chairs, tables, cabinets, and other pieces of furniture.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Manuscripts:</span> The museum has a collection of rare and valuable manuscripts, including illuminated manuscripts from the medieval period.
+                    </li>
+                    <br>
+                    <li>
+                        <span>Numismatics:</span> The museum has a collection of coins from various parts of the world, including ancient Roman coins, medieval Indian coins, and modern European coins.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!--Nehru Zoological Park detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionNehruZoologicalPark">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.en.etemaaddaily.com/pages/world/hyderabad/947nehru-zoological-Park.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Nehru_Zoological_Park%2C_Hyderabad%2C_Telangana5.jpg/800px-Nehru_Zoological_Park%2C_Hyderabad%2C_Telangana5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://yometro.com/images/places/nehru-zoological-park.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Nehru Zoological Park</h1>
+                    <p>
+                        Nehru Zoological Park is a sprawling zoo located on the outskirts of Hyderabad. It is home to a wide variety of animals, including tigers, lions, elephants, and monkeys. Visitors can also see exotic birds and reptiles, and take a safari ride through the park to see animals in their natural habitats.
+                    </p>
+                    <p>
+                        The zoo was established in 1959 and was named after Jawaharlal Nehru, the first Prime Minister of India. It covers an area of 380 acres and is one of the largest zoos in India.
+                    </p>
+                    <p>
+                        The zoo has over 1500 animals from 150 different species, including mammals, birds, reptiles, and amphibians. Some of the most popular animals at the zoo include lions, tigers, bears, elephants, giraffes, zebras, rhinoceroses, and primates.
+                    </p>
+                    <p>
+                        The zoo has several exhibits that allow visitors to observe the animals up close. Some of the popular exhibits include the Lion Safari Park, the Natural History Museum, the Nocturnal Animal House, the Primate House, and the Reptile House.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <h1 class="content-title">More about Nehru Zoological Park </h1>
+            <p>
+                <span>Butterfly Park:</span> The zoo has a dedicated Butterfly Park, which is home to several species of butterflies. Visitors can walk through the park and observe the butterflies in their natural habitat.
+            </p>
+            <p>
+                <span>Safari Options:</span> In addition to the Lion Safari Park, the zoo also has a Deer Safari Park, which allows visitors to take a ride through the park and see different species of deer up close.
+            </p>
+            <p>
+                <span>Shows:</span> The zoo has several shows that are held throughout the day, including the Bird Show, the Elephant Show, and the Lion and Tiger Show. These shows provide visitors with a unique opportunity to see the animals in action and learn more about their behavior.
+            </p>
+            <p>
+                <span>Events:</span> The zoo hosts several events throughout the year, such as the Annual Bird Festival, which attracts bird enthusiasts from all over the country. The zoo also celebrates various festivals such as Diwali and Christmas with decorations and special events.
+            </p>
+            <p>
+                <span>Conservation:</span> The Nehru Zoological Park is committed to conservation and has several programs in place to protect endangered species. The zoo also conducts research and provides education programs to raise awareness about animal conservation.
+            </p>
+            <p>
+                <span>Facilities:</span> The zoo has several facilities for visitors, including restaurants, souvenir shops, and picnic areas. The park is also accessible for people with disabilities.
+            </p>
+            <p>
+                <span>Feeding Programs:</span> Visitors can participate in feeding programs for certain animals, such as elephants and giraffes, where they can feed the animals under the supervision of zoo staff.
+            </p>
+            <p>
+                <span>Educational Programs:</span> The zoo has several educational programs, such as the Junior Zookeeper Program, where children can learn about animal care and conservation. The zoo also has a mobile education unit that visits schools and communities to raise awareness about wildlife conservation.
+            </p>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!--Qutb Shahi Tombs detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionQutbShahiTombs">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://cdn.siasat.com/wp-content/uploads/2021/02/Qutub-Shahi-Tomb.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.hyderabadzone.com/wp-content/uploads/2022/09/Qutub-Shahi-Tombs.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Qutb_Shahi_tombs_-_Inner_view.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Qutb Shahi Tombs</h1>
+                    <p>
+                        Qutb Shahi Tombs is a collection of tombs located in the Ibrahim Bagh in Hyderabad, Telangana. These tombs were built to honor the members of the Qutb Shahi dynasty, who ruled the region during the 16th and 17th centuries. The Qutb Shahi dynasty was founded by Sultan Quli Qutb Shah, who was a general in the army of the Bahmani Sultanate.
+                    </p>
+                    <p>
+                        The tombs are located about a kilometer away from the famous Golconda Fort, and they showcase a unique architectural style that blends elements of Persian, Pashtun, and Hindu architecture. The tombs are made of grey granite and decorated with intricate stucco ornamentation, and are surrounded by landscaped gardens.
+                    </p>
+                    <p>
+                        There are a total of seven tombs in the complex, including the tombs of Sultan Quli Qutb Shah, his son Jamshed Quli Qutb Shah, and several other members of the dynasty. The tombs are arranged in a linear pattern, and each tomb has its own unique architectural style and features.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <p>
+                The most impressive tomb in the complex is the mausoleum of Muhammad Quli Qutb Shah, who was the fifth ruler of the Qutb Shahi dynasty and the founder of the city of Hyderabad. This tomb is known for its impressive dome, which is 42 meters in diameter and 24 meters high.
+            </p>
+            <p>
+                The Qutb Shahi Tombs were restored in the 1990s by the Aga Khan Trust for Culture, and they were designated as a UNESCO World Heritage site in 2010. Today, the tombs are open to visitors and offer a glimpse into the rich history and architectural heritage of the Qutb Shahi dynasty.
+            </p>
+            <p>
+                Apart from the seven major tombs, there are also several smaller tombs and pavilions in the complex, which add to the overall grandeur of the site. The tombs are spread over an area of 108 acres and are surrounded by lush green gardens and ornamental water channels.
+            </p>
+            <p>
+                Today, the Qutb Shahi Tombs are an important tourist attraction in Hyderabad, drawing visitors from all over the world. The site is managed by the Telangana State Tourism Development Corporation, and visitors can take guided tours of the complex to learn more about the rich history and cultural significance of the tombs.
+            </p>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+    <!-- Laad Bazaar detail section -->
+    <div class="places-detail-section container-fluid p-0  pt-5 pb-5" id="sectionLaadBazaar">
+        <div class="row p-0 m-0 pt-md-3 pb-md-0">
+            <div class="col-12 col-lg-6 col-xl-5 p-0 d-md-flex flex-md-row justify-content-md-center align-items-md-center">
+                <div class="place-images pt-3 pt-xl-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://iac.isa-india.in/wp-content/uploads/2021/05/Laad-Bazaar-1024x576.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.siasat.com/wp-content/uploads/2023/02/Laad-Bazaar.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.hyderabadtourism.travel/images/visiting-places/headers/laad-bazaar-hyderabad-tourism-bangles-shopping-timings-package-tour.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 p-0">
+                <div class="detail-content p-0 px-3 pt-3 pl-md-5  pl-lg-0">
+                    <h1 class="content-title">Laad Bazaar</h1>
+                    <p>
+                        Laad Bazaar is a bustling shopping district in Hyderabad that is famous for its bangles and other traditional jewelry. The narrow streets are lined with shops selling everything from traditional clothing to spices and sweets. Visitors can also try local street food and watch as skilled artisans create intricate jewelry by hand.
+                    </p>
+                    <p>
+                        The market is located near the iconic Charminar monument and is easily accessible by public transport. The bazaar is a maze of narrow alleys and lanes, lined with small shops and stalls selling everything from bangles and jewelry to traditional clothing and souvenirs.
+                    </p>
+                    <p>
+                        Laad Bazaar is particularly famous for its bangles, which are available in a wide range of colors and designs. The bangles are made by skilled artisans using traditional techniques and are considered to be some of the best in the world.
+                    </p>
+                    <p>
+                        Apart from bangles, Laad Bazaar also offers a variety of other traditional handicrafts, including lacquer work, embroidery, and weaving. Visitors can also sample some of the local delicacies, including Irani chai and Osmania biscuits, which are sold by small food stalls in the market.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content p-0 px-3 pl-md-5 pb-3">
+            <p>
+                Laad Bazaar is a must-visit destination for anyone interested in Hyderabad's rich cultural heritage and traditional handicrafts. The market is open every day of the week and is a great place to shop for souvenirs and gifts to take back home.
+            <p>
+                The palace's main entrance, known as the Khilwat Mubarak, is a magnificent example of Indo-Saracenic architecture. It features intricate carvings, beautiful arches, and exquisite stucco work. The Khilwat Mubarak is also home to the grand Durbar Hall, which was used for the coronation of the Nizams and other important events.
+            </p>
+            <p>
+                The palace also has a beautiful collection of vintage cars, including a Rolls Royce, a Packard, and a Jaguar. The palace's interior features ornate wooden ceilings, stained glass windows, and intricate carvings. The palace's gardens are also a beautiful sight, with lush green lawns, beautiful fountains, and fragrant flowers.
+            </p>
+            <p>
+                Today, Chowmahalla Palace is open to the public and is a popular tourist destination in Hyderabad. The palace has been restored and renovated, and visitors can explore the palace's many rooms, courtyards, and gardens to experience the grandeur and opulence of the Nizams' lifestyle.
+            </p>
+
+            <div class="more-content">
+                <h1 class="content-title py-3">Things available in Laad Bazaar</h1>
+                <p>
+                    <span>Bangles:</span> The bangles come in a wide range of colors and designs, including gold and silver work, studded with precious and semi-precious stones, and featuring intricate patterns and motifs. The bangles are available in different sizes, ranging from small to extra-large, to fit every wrist.
+                <p>
+                <p>
+                    <span>Lacquer work:</span> Laad Bazaar is famous for its lacquer work, which is used to create bangles, jewelry, and other decorative items. Lacquer work involves coating a base material with a layer of resin or varnish, which is then decorated with intricate designs and patterns.
+                <p>
+                    <span>Embroidery:</span> Hyderabad is known for its exquisite embroidery work, which is done by skilled artisans using traditional techniques. You can find a variety of embroidered fabrics, including sarees, dupattas, and kurtas, in Laad Bazaar.
+                </p>
+                <p>
+                    <span>Pearls:</span> Hyderabad is also known as the "Pearl City" because of its long association with pearl trading. Laad Bazaar offers a wide range of pearl jewelry, including necklaces, earrings, and bracelets.
+                </p>
+                <p>
+                    <span>Traditional clothing:</span> Laad Bazaar is a great place to shop for traditional clothing, including sarees, salwar kameez, and kurtas. The clothing is available in a range of fabrics, including cotton, silk, and chiffon.
+                </p>
+                <p>
+                    <span>Handicrafts:</span> You can find a variety of handicrafts in Laad Bazaar, including brassware, woodwork, and pottery. These handicrafts are made by skilled artisans using traditional techniques and make great souvenirs and gifts.
+                </p>
+            </div>
+        </div>
+
+        <div class="go-back-section pt-4 d-flex flex-row align-items-center justify-content-start ">
+            <button class="btn " onclick="display('sectionPlacesContainer')"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+
+
+
+    <script src="script_main.js"></script>
+
+</body>
+
+</html>
